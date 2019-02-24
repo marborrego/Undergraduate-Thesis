@@ -1,0 +1,7 @@
+# Backup files
+
+To use these files:
+
+   ln -s spacemacs ~/.spacemacs
+   ln -s aspell.conf ~/.aspell.conf
+   ...
