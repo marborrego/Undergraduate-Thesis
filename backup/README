@@ -2,6 +2,5 @@
 
 To use these files:
 
-   ln -s spacemacs ~/.spacemacs
-   ln -s aspell.conf ~/.aspell.conf
-   ln -s aspell.en.pws ~/.aspell.en.pws
+    bash run.sh
+
