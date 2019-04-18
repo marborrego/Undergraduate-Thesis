@@ -108,9 +108,10 @@
 % To remove it, comment it out or delete it.
     \chapter*{Preface}
 	Science has a history as an oppressive institution. That being said, I think
-  that science also has the ability to liberate individuals. I hope that at the
-  least this
-  thesis makes one think of how plastic we are to our day-to-day experiences.
+  that science also has the ability to liberate individuals. We must strive to understand how
+the spaces we create impact one another and to interrogate the ways in which we
+judge people's ability to control their actions. I hope that at the
+  least this thesis makes one think of how plastic we are to our day-to-day experiences.
 
     \chapter*{List of Abbreviations}
 
@@ -121,6 +122,7 @@
     \textbf{ACTH} & Adrenocorticotropin hormone\\
     \textbf{CRH} & Corticotropin-releasing hormone \\
     \textbf{CPP} & Conditioned place preference\\
+    \textbf{C$_q$} & Cycle quantification \\
     \textbf{GR} & Glucocorticoid receptor \\
     \textbf{GRE} & Glucocorticoid response element \\
     \textbf{HLG} & High licking \& grooming \\
@@ -129,7 +131,8 @@
     \textbf{PCR} & Polymerase chain reaction\\
     \textbf{PVN} & Pareventricular nucleus \\
     \textbf{qPCR} & Quantitative polymerase chain reaction\\
-	\end{tabular}
+    \textbf{SQ} & Starting quantity \\
+   	\end{tabular}
 	\end{table}
 	
 
@@ -154,7 +157,7 @@ For Langston.
 %The \introduction command is provided as a convenience.
 %if you want special chapter formatting, you'll probably want to avoid using it altogether
 
-    \chapter*{Introduction}
+    \chapter{Introduction}
          \addcontentsline{toc}{chapter}{Introduction}
 	\chaptermark{Introduction}
 	\markboth{Introduction}{Introduction}
@@ -163,9 +166,9 @@ For Langston.
 % Double spacing: if you want to double space, or one and a half 
 % space, uncomment one of the following lines. You can go back to 
 % single spacing with the \singlespacing command.
- \onehalfspacing
-% \doublespacing
-		
+% \onehalfspacing
+ \doublespacing
+\section{A Brief History of Nature \textit{vs} Nurture}		
 A defining feature of living organisms is that they are able to respond to
 stimuli in their environment. In other words, they behave. Each behavior
 requires a stimulus, or multiple stimuli, that triggers a chain
@@ -227,12 +230,11 @@ thought of as an intertwining of nature \textit{and} nurture
 understanding the ratio of environmental to genetic influence on a behavior, we
 can instead examine how certain genotypes make an organism more vulnerable to
 environmental influences or how the environment influences the ways in which the
-genome is utilized. This research is crucial because it implies that, as animals, our behavior
-can be drastically altered by our environment. We must strive to understand how
-the spaces we create impact one another and to interrogate the ways in which we
-judge people's ability to control their actions. 
+genome is utilized. This research provides a framework for
+which to examine any biological process, and it is through this lense that this
+thesis is written.   
 
-\chapter{Stress}
+%\chapter{Stress}
 
 \section{The Hypothalamic-Pituitary-Adrenal Axis}
 
@@ -273,7 +275,9 @@ the hypothalamic neurons involved in the HPA axis. It is also possible to activa
 anticipatory response. If an animal has been conditioned to associate a given
 smell with a predator, then in the presence of that smell
  alone the animal may trigger the HPA axis in anticipation of the danger. This requires polysynaptic signaling from limbic
-structures involved in learning and fear such as the hippocampus and amygdala.
+structures involved in learning and fear such as the hippocampus (homologous to
+telencephalic pallium in teleosts) and amygdala (homologous to the medial
+pallium in teleots) \citep{salas_neuropsychology_2006}.
 The hippocampus excites the axis through glutamatergic interneurons, whereas it is hypothesized that much of
 the excitatory amygdalar signaling works through disinhibition 
 In both the immediate and anticipated cases, the activation of neurons within the hypothalamus leads to a
@@ -289,7 +293,9 @@ regulator of hormone release. The binding of CRH to CRF$_{1}$ receptors in the
 anterior pituitary leads to the secretion of adrenocorticotropin hormone (ACTH).
 This excitatory interaction can be potentiated by vasopressin, though
 vasopressin alone is not enough to produce an effect. ACTH enters the blood stream and travels to the adrenal cortices, which are the dorsal
-regions of the adrenal glands. ACTH binds to melanocortin 2 receptors, which
+regions of the adrenal glands. In teleosts, the interrenal cells are homologous
+to the dorsal region as there is not a clear division
+between their kidneys and their adrenal glands \citep{pijanowski_activity_2015}. ACTH binds to melanocortin 2 receptors, which
 increases the synthesis of cholesterol. Cholesterol is then transported to the
 outer mitochondrial matrix where the steroidogenic pathway begins. A major end
 product of this pathway and thus of the HPA axis is corticosteroids.
@@ -556,6 +562,7 @@ of adults and adolescents.}
 \end{table}
 
 \subsection{\textit{Astatotilapia burtoni}}
+
  \textit{A. burtoni}, also referred to as \textit{Haplochromis burtoni}, is a
  highly social cichlid species known for its extremely plastic phenotypes related to
  dominance. There exists two distinct dominance phenotypes in males:
@@ -571,7 +578,6 @@ size, while subordinate males have increased levels of
 cortisol and experience faster growth. Males are
 able two switch between these phenotypes throughout their lives in response to
 changes in their social interactions.
- 
 
 Female \textit{A. burtoni} also exhibit social dominance, though unlike the
 males, both dominant and subordinate females are reproductively active. Females take part in a brood care strategy known as mouthbrooding. The female lays eggs and immediately picks them up, storing them in
@@ -615,9 +621,18 @@ data for the same overarching question in order to build a better understanding
 as to how
 maternal separation alters GRs.
 
-\chapter{The Experiment}
-\section{Methods}
-\subsection{The Fish}
+%\chapter{The Experiment}
+\chapter{Methods}
+\section{The Fish}
+
+The parental generation of the focal juveniles originated from a wild-caught
+stock of \textit{A. burtoni} collected from Lake Tanganyika in East Africa.
+Social groups containing males and females of the same generation were kept in
+30 gallon aquaria at a temperature of 28$^\circ$C and a pH of 8. Each aquarium's bottom
+was covered in gravel, and terra cotta pot pieces were placed in the tank to act
+as shelters and territory markers. Once a female fish began mouthbrooding, she
+was removed from the aquarium and randomly placed into one of two experimental
+conditions.
 
 \begin{figure}[htbp] 
 \begin{centering} 
@@ -634,15 +649,6 @@ the fry were able to freely swim and the flask was removed.}}
 \end{centering} 
 \end{figure}
 
-The parental generation of the focal juveniles originated from a wild-caught
-stock of \textit{A. burtoni} collected from Lake Tanganyika in East Africa.
-Social groups containing males and females of the same generation were kept in
-30 gallon aquaria at a temperature of 28$^\circ$C and a pH of 8. Each aquarium's bottom
-was covered in gravel, and terra cotta pot pieces were placed in the tank to act
-as shelters and territory markers. Once a female fish began mouthbrooding, she
-was removed from the aquarium and randomly placed into one of two experimental
-conditions.
-
 In the unseparated condition, mothers were removed from their home tank,
 weighed, and measured. They were then placed in small tanks containing gravel
 and a piece of terra cotta pot. Mothers continued to brood their young until the
@@ -653,7 +659,6 @@ were removed from their mouths by gently pulling down the bottom
 lips. The eggs were then placed in a 250 mL flask within a tank containing gravel. Once
 the eggs developed into freely moving fry (approximately weeks post-fertilization), the flask was removed from the tank and a piece of terra cotta was added.
 
-\subsection{Behavioral Tests}
 \begin{figure}[htbp] 
 \begin{centering} 
 \includegraphics[scale = 0.5]{fish_time}
@@ -670,6 +675,8 @@ the eggs developed into freely moving fry (approximately weeks post-fertilizatio
 \label{subd}
 \end{centering} 
 \end{figure}
+
+\section{Behavioral Tests}
 
 Behavioral testing began approximately 130 days after the brooding mothers were
 placed into experimental conditions and consisted of two assays: boldness and social. Both assays were performed on the same day.
@@ -719,7 +726,7 @@ number of charges, bites, and chases between fish that occurred in 10 minutes
 were recorded. The total sum of aggressive behaviors was then divided by the number of fish in the brood to create a score. Broods that only had one fish in them were excluded from this paradigm.  
 
 
-\subsection{Gene Expression Assay}
+\section{Gene Expression Assay}
 Directly following behavioral testing, fish were measured for length and weight
 and quickly decapitated. The brains were then extracted and placed into 1 mL of
 RNALater and
@@ -733,14 +740,16 @@ reverse transcribed into cDNA with an Invitrogen Reverse Transcription kit.
 \begin{centering} 
 \includegraphics[scale = 0.5]{primers}
 \caption[Primer design]{\footnotesize{Primer design. \\ Primers sequences were taken
-  from a study by . The locations of the primers were then found by
+  from a study by Taborsky \textit{et. al}. The locations of the primers were then found by
   comparing the sequences to \textit{A. burtoni} transcriptional sequences using
-the NCBI BLAST database. The forward primer of GR1a spans the }} 
+the NCBI BLAST database. The GR2 primer is designed to target the homologous
+duplicated GR receptor (nr3c1) gene. Primers that span introns are denoted by two arrows in
+the same direction.}} 
 \label{subd}
 \end{centering} 
 \end{figure}
 
-Previously validated primers for GR1a, GR1b, and GR2 were used for qPCR. The
+Previously validated primers for GR1a, GR1b, and GR2 were used for qPCR \citep{solomon-lane_early-life_2018}. The
 housekeeping gene rpl32, which is a ribosomal protein coding gene, was used as a
 reference for GR expression. Each reaction contained cDNA (1 $\mu$L), 2x Immuno Mix (10 $\mu$L),
 forward and reverse primers (1 $\mu$L of 100 nM each), 50x SYBR Green (0.5
@@ -801,66 +810,120 @@ melting temperature using this cDNA. The most effective melting temperature was
 then selected for qPCR. The efficiency of individual primers at the selected
 melting temperature was calculated with qPCR using a dilution series of the cDNA.
 
-\section{Results}
-\subsection{Size}
+\chapter{Results}
+\section{Size}
 
 \begin{figure}[htbp] 
 \begin{center} 
-\includegraphics{size_unedited}
-\caption[Comparison of fry size between groups.]{\footnotesize{The size of fish}}
+\includegraphics{size}
+\caption[Comparison of fry size]{\footnotesize{Comparison of fry body
+      ratio. \\ The body ratio of each fry
+    was calculated as the body weight in grams divided by the length in
+    centimeters. There was no
+    statistically significant difference between the size of fry kept with their
+    mothers (\textit{M} = 0.23, \textit{SD} = 0.09) and fry separated from their
+  mothers (\textit{M} = 0.20, \textit{SD} = 0.11), \textit{t} = 0.70, \textit{p}
+= 0.25}.}
 \label{subd}
 \end{center} 
 \end{figure}
 
-\textbf{Get data for actual weight and length}
-Prior to euthanasia each fry's weight and length, from the nose to the beginning of
+Because of the ability of glucocorticoids to alter development, each
+experimental groups' body
+compositions were assessed. Prior to euthanasia each fry's weight and length, from the nose to the beginning of
 the caudal fin, were measured. 
-Size was calculated to be the weight divided by body length. The conditions were
-compared using a student's t-test for independent means. The two groups did not differ in their size (\underline{M} S = 0.20
-g/cm, \underline{M} M = 0.23 g/cm, \underline{p} = 0.49). 
+Body ratio was calculated to be the weight divided by body length. The conditions were
+compared using a student's t-test for independent means. There was no
+significant difference between fry kept with their mothers (\textit{M} = 0.23 g/cm,
+\textit{SD} = 0.09) and fry separated from their mothers (\textit{M} = 0.20 g/cm,
+\textit{SD} = 0.11), \textit{p} = 0.25. There was also no
+significant difference between the length alone (\textit{M} separated = 2.31 cm,
+\textit{M} unseparated = 2.49 cm) \textit{p} = 0.51 and the weight
+alone(\textit{M} separated = 0.52 g, \textit{M} unseparated = 0.60 g) \textit{p}
+= 0.65.  
 
-\subsection{Boldness}
+\section{Boldness}
 
 \begin{figure}[htbp] 
 \begin{center} 
-\includegraphics{bottom_unedited}
-\caption[Time spent at bottom of tank.]{\footnotesize{Bottom}}
+\includegraphics{explore}
+\caption[Effect of maternal separation on boldness]{\footnotesize{Effect of
+    maternal separation on boldness.\\ Fry were placed individually into a novel tank
+    divided into three parts: top, bottom, and shelter. The percent of time
+    spent in each region over the course of 10 minutes was recorded. Fry
+    separated from their mothers spent significantly more time in the bottom of
+    the tank compared to those that were unseparated (\textit{p} < 0.05). There was
+    no significant difference between groups for time spent in shelter
+    (\textit{p} = 0.08) and in top (\textit{p} = 0.22)}}
 \label{subd}
 \end{center} 
 \end{figure}
 
-\begin{figure}[htbp] 
-\begin{center} 
-\includegraphics{top_unedited}
-\caption[Time spent at top of tank.]{\footnotesize{Top}}
-\label{subd}
-\end{center} 
-\end{figure}
+The boldness assay is meant to assess the fry's anxiety-like behavior in a novel
+environment. The experimental tank was divided into three parts: the shelter,
+where fry could hide behind; the bottom of the tank, where fry were exposed, but
+could blend in with the gravel; and the top of the tank, where fry were in
+completely open water. The data were non-normally distributed, so a Wilcoxon
+rank test was used to analyze them. Fry that were separated from their mothers spent a
+significantly greater percentage of their time in the the bottom of the tank
+(\textit{M} = 43\%) compared to those unseparated from their mothers (\textit{M}
+= 20\%), p < 0.05. There was no significant difference between conditions in the
+time spent at the top (\textit{M} separated = 10\%, \textit{M} unseparated =
+5\%, \textit{p} = 0.22) and behind the shelter (\textit{M} separated = 45\%,
+\textit{M} unseparated = 72\%, \textit{p} = 0.08) 
 
-\begin{figure}[htbp] 
-\begin{center} 
-\includegraphics{shelter_unedited}
-\caption[Time spent behind the shelter.]{\footnotesize{Shelter}}
-\label{subd}
-\end{center} 
-\end{figure}
-
-\subsection{Aggression}
+\section{Aggression}
 \begin{figure}[htbp] 
 \begin{center} 
 \includegraphics{aggression}
-\caption[Results of aggression assay.]{\footnotesize{Aggression. Yada yada}}
+\caption[Comparison of tank aggression between
+groups]{\footnotesize{Comparison of tank aggression between groups.\\ Fry aggression was measured
+  as the amount of charges, chases, and bites that occured within 10 minutes,
+  divided by the number of fry in the tank. Broods in which there was only one
+  fry in the tank were not tested. As measured by a Wilcoxon rank-sum test,
+  there was no difference between fry separated from their mothers (rank sum =
+  67) and fry kept with their mothers (rank sum = 69), \textit{z} = 0.11,
+  \textit{p} = 0.92}.}
 \label{subd}
 \end{center} 
 \end{figure}
 
-To analyze the aggression, a Wilcox Ranked Sum test was used. There was no
-significant difference between the two groups (\underline{M} S = 
-g/cm, \underline{M} M =  g/cm, \underline{p} = 0.92).
+To measure brood aggression, the total number of charges, chases, and
+bites were summed. This sum was then divided by the number of fry in the brood
+to calculate an average agression score that accounted for brood size. The
+resulting data were not normally distributed, so to analyze the aggression, a Wilcox Ranked Sum test was used. There was no
+significant difference in the number of attacks per fish between the two groups (\textit{M} separated = 4.12, \textit{M} unseparated = 3.75 , \textit{p} = 0.92).
 
-\subsection{Glucocorticoid Receptor Expression}
+\section{Glucocorticoid Receptor Expression}
 
-\section{What Does this Mean?}
+\begin{figure}[htbp] 
+\begin{center} 
+\includegraphics{gene_exp}
+\caption[GR expression profile for experimental
+conditions]{\footnotesize{GR expression profile for experimental
+      conditions.\\ Relative expression for GR1a, GR1b, and GR2 were calculated
+  by adjusting the C$q$ by primer efficiency and then by dividing this starting
+  quantity by starting quantity of the control gene rpl32. There was no
+  significant difference in the expression levels between groups (GR1a
+  \textit{p} = 0.38, GR1b \textit{p} = 0.31, GR2 \textit{p} = 0.63).}}
+\label{subd}
+\end{center} 
+\end{figure}
+
+The starting quantity (SQ) for each sample was calculated by adjusting the cycle
+quantification (C$_{q}$)
+value by the efficiency of the primer in order to
+correct for starting concentration of cDNA. The 
+mean SQ for each sample (samples were run in duplicate) was then divided by the mean SQ
+of rpl32. GR1a and GR1b expression between conditions were analyzed individually using an independent means
+t-test. The data for GR2 expression were not normally distributed, so Wilcox Ranked Sum tests
+were used for analysis.\\
+There was no statistically significant gene expression between treatment groups
+for all three genes of interest (GR1a \textit{M} separated = 1.02, \textit{M}
+unseparated = 0.92, \textit{p} = 0.38; GR1b \textit{M} separated = 0.86, \textit{M}
+unseparated = 1.00, \textit{p} = 0.31; GR2 \textit{M} separated = 1.14, \textit{M}
+unseparated = 1.12, \textit{p} = 0.63)
+\chapter{Discussion}
 
 %\chapter{The Rest}
 	
@@ -885,8 +948,8 @@ g/cm, \underline{M} M =  g/cm, \underline{p} = 0.92).
 % \subsection{Footnotes and Endnotes}
 % 	You might want to footnote something.\footnote{footnote text} Be sure to leave no spaces between the word immediately preceding the footnote command and the command itself. The footnote will be in a smaller font and placed appropriately. Endnotes work in much the same way. More information can be found about both on the CUS site.
 	
-\section{Bibliographies}
-	Of course you will need to cite things, and you will probably accumulate an armful of sources. This is why BibTeX was created. For more information about BibTeX and bibliographies, see our CUS site (\url{web.reed.edu/cis/help/latex/index.html}). There are three pages on this topic: {\it bibtex} (which talks about using BibTeX, at \url{/latex/bibtex.html}), {\it bibtexstyles} (about how to find and use the bibliography style that best suits your needs, at \url{/latex/bibtexstyles.html}) and {\it bibman} (which covers how to make and maintain a bibliography by hand, without BibTeX, at at \url{/latex/bibman.html}). The last page will not be useful unless you have only a few sources. There used to be APA stuff here, but we don't need it since I've fixed this with my apa-good natbib style file.
+%\section{Bibliographies}
+%	Of course you will need to cite things, and you will probably accumulate an armful of sources. This is why BibTeX was created. For more information about BibTeX and bibliographies, see our CUS site (\url{web.reed.edu/cis/help/latex/index.html}). There are three pages on this topic: {\it bibtex} (which talks about using BibTeX, at \url{/latex/bibtex.html}), {\it bibtexstyles} (about how to find and use the bibliography style that best suits your needs, at \url{/latex/bibtexstyles.html}) and {\it bibman} (which covers how to make and maintain a bibliography by hand, without BibTeX, at at \url{/latex/bibman.html}). The last page will not be useful unless you have only a few sources. There used to be APA stuff here, but we don't need it since I've fixed this with my apa-good natbib style file.
 	
 % \subsection{Tips for Bibliographies}
 % \begin{enumerate}
