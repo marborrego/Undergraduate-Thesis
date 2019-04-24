@@ -48,7 +48,8 @@
 
 % \usepackage{times} % other fonts are available like times, bookman, charter, palatino
 
-\title{Mommy Fishues}
+\title{The Effect of Maternal Separation on the Stress Response of
+  \textit{A. burtoni}}
 \author{Marissa Breanne Borrego}
 % The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
 \date{May 2019}
@@ -148,7 +149,6 @@ judge people's ability to control their actions. I hope that at the
     \textbf{SQ} & Starting quantity \\
    	\end{tabular}
 	\end{table}
-	
 
     \tableofcontents
 % if you want a list of tables, optional
@@ -159,25 +159,30 @@ judge people's ability to control their actions. I hope that at the
 % The abstract is not required if you're writing a creative thesis (but aren't they all?)
 % If your abstract is longer than a page, there may be a formatting issue.
     \chapter*{Abstract}
-	The ability of a developing organisms to adjust to its early life environment is an
+	The ability of a developing organism to adjust to its early life environment is an
   important adaptation. That being said, when the adult environment does not
   match the early environment, these adjustments can be harmful. Exposure to
   early life stress is known to be correlated with a number of neuropathologies
-  and developmental disorders later in life. Early life stress is able to
+  and developmental disorders. Early life stress is able to
   reprogram the hypothalamic-pituitary-adrenal axis of organisms, leading to an
-  alteration in the stress response. In rats, poor maternal care is associated
-  with an increase in corticosterone and anxiety-like behavior in stressful situations. This change in
+  alteration in the stress response. In mammals, poor maternal care is associated
+  with an increase in circulating corticosteroids and anxiety-like behavior in stressful situations. This change in
   responsiveness is also accompanied by a decrease in inhibitory feedback of the
   hypothalamic-pituitary-adrenal axis, as measured by decreased glucocorticoid
-  receptors. The present study aimed to model this mammalian study in the
+  receptors. The present study aimed to model these mammalian studies in the
   mouthbrooding cichlid species \textit{A. burtoni}. Mouthbrooding females were
   placed into one of two conditions: maternal care or maternal separation. In
   the maternal care condition, fry were allowed to stay with their mothers for
   the first two weeks post-fertilization. In the maternal separation condition,
   fry were removed from their mothers' buccal cavities shortly after
-  fertilization. Stress-like behavior was measured through exploratory and
+  fertilization. Stress-related behavior was measured through boldness and
   aggression assays while stress response was measured through glucocorticoid
-  receptor expression. 
+  receptor expression. Fry separated from their mothers spent more time in the
+  bottom of the novel tank compared to unseparated fry, suggesting an increase
+  in boldness. There was no significant difference between conditions in
+  body mass, aggression, or glucocorticoid receptor expression. Further research
+  is needed in order to assess whether maternal separation in \textit{A.
+    burtoni} is comparable to low maternal care in mammals. 
     
 	\chapter*{Dedication}
   \epigraph{And in our hearts\\ How beautiful the flames that will flare up in a
@@ -189,10 +194,10 @@ For Langston.
 %The \introduction command is provided as a convenience.
 %if you want special chapter formatting, you'll probably want to avoid using it altogether
 
-    \chapter{Introduction}
-         \addcontentsline{toc}{chapter}{Introduction}
-	\chaptermark{Introduction}
-	\markboth{Introduction}{Introduction}
+\chapter{Introduction}
+  % \addcontentsline{toc}{chapter}{Introduction}
+	%\chaptermark{Introduction}
+	%\markboth{Introduction}{Introduction}
 	% The three lines above are to make sure that the headers are right, that the intro gets included in the table of contents, and that it doesn't get numbered 1 so that chapter one is 1.
 
 % Double spacing: if you want to double space, or one and a half 
@@ -659,9 +664,39 @@ like behavior and more aggression compared to those brooded by their mothers.
 This heightened stress response would be accompanied by a decrease in GR1a,
 GR1b, and GR2 receptor expression.
 
-%\chapter{The Experiment}
 \chapter{Methods}
 \section{The Fish}
+\begin{table}[htbp]
+\caption[Brood information]{Brood information}
+\begin{center}
+\footnotesize
+\begin{tabular}{ | c | c | c |}
+\hline
+\textbf{Brood ID} & \textbf{Condition} & \textbf{Number of Fry}\\
+\hline
+0-0 & Unseparated & 1\\
+\hline
+Z-1-3 & Separated & 2\\
+  \hline
+  Z-1-7 & Unseparated & 3\\
+  \hline
+Z-1-9 & Unseparated & 3\\
+\hline
+Z-2-1 & Unseparated & 2 \\
+  \hline
+Z-2-4 & Separated & 3 \\
+\hline
+Z-2-9 & Separated & 1 \\
+\hline
+Z-3-1 & Separated & 3 \\
+  \hline
+  \textbf{Total} & \textbf{Unseparated = 4 broods} & \textbf{Unseparated = 9 fry}\\
+  & \textbf{Separated = 4 broods} & \textbf{Separated = 9 fry}\\
+  \hline
+\end{tabular}
+\end{center}
+\end{table}
+
 
 The parental generation of the focal juveniles originated from a wild-caught
 stock of \textit{A. burtoni} collected from Lake Tanganyika in East Africa.
@@ -764,7 +799,7 @@ overli_behavioral_2004, honess_behavioural_2006, takahashi_aggression_2018}. Ind
 transferred into a novel aquarium containing only water. The fish were allowed
 to acclimate to the new environment for 10 minutes before scoring began. The
 number of charges, bites, and chases between fish that occurred in 10 minutes
-were recorded. The total sum of aggressive behaviors was then divided by the number of fish in the brood to create a score. Broods that only had one fish in them were excluded from this paradigm.  
+was recorded. The total sum of aggressive behaviors was then divided by the number of fish in the brood to create a score. Broods that only had one fish in them were excluded from this paradigm.  
 
 
 \section{Gene Expression Assay}
@@ -856,7 +891,7 @@ melting temperature was calculated with qPCR using a dilution series of the cDNA
 
 \begin{figure}[htbp] 
 \begin{center} 
-\includegraphics{size}
+\includegraphics[scale = 0.80]{size}
 \caption[Comparison of fry size]{\footnotesize{Comparison of fry body
       ratio. \\ The body ratio of each fry
     was calculated as the body weight in grams divided by the length in
@@ -916,10 +951,10 @@ time spent at the top (\textit{M} separated = 10\%, \textit{M} unseparated =
 \section{Aggression}
 \begin{figure}[htbp] 
 \begin{center} 
-\includegraphics{aggression}
+\includegraphics[scale = 0.80]{aggression}
 \caption[Comparison of tank aggression between
 groups]{\footnotesize{Comparison of tank aggression between groups.\\ Fry aggression was measured
-  as the amount of charges, chases, and bites that occured within 10 minutes,
+  as the amount of charges, chases, and bites that occurred within 10 minutes,
   divided by the number of fry in the tank. Broods in which there was only one
   fry in the tank were not tested. As measured by a Wilcoxon rank-sum test,
   there was no difference between fry separated from their mothers (rank sum =
@@ -931,7 +966,7 @@ groups]{\footnotesize{Comparison of tank aggression between groups.\\ Fry aggres
 
 To measure brood aggression, the total number of charges, chases, and
 bites were summed. This sum was then divided by the number of fry in the brood
-to calculate an average agression score that accounted for brood size. The
+to calculate an average aggression score that accounted for brood size. The
 resulting data were not normally distributed, so to analyze the aggression, a Wilcox Ranked Sum test was used. There was no
 significant difference in the number of attacks per fish between the two groups (\textit{M} separated = 4.12, \textit{M} unseparated = 3.75 , \textit{p} = 0.92).
 
@@ -964,6 +999,28 @@ for all three genes of interest (GR1a \textit{M} separated = 1.02, \textit{M}
 unseparated = 0.92, \textit{p} = 0.38; GR1b \textit{M} separated = 0.86, \textit{M}
 unseparated = 1.00, \textit{p} = 0.31; GR2 \textit{M} separated = 1.14, \textit{M}
 unseparated = 1.12, \textit{p} = 0.63).
+
+\begin{figure}[htbp] 
+\begin{center} 
+\includegraphics[scale = 0.80]{1a2}
+\caption[Relationship between GR1a and GR2
+expression]{\footnotesize{Relationship between GR1a and GR2 expression.\\ GR1a
+    expression was positively correlated with GR2 expression, \textit{p} < 0.05.}}
+\label{subd}
+\end{center} 
+\end{figure}
+
+\begin{figure}[htbp] 
+\begin{center} 
+\includegraphics[scale = 0.80]{1b2}
+\caption[Relationship between GR1b and GR2
+expression]{\footnotesize{Relationship between GR1b and GR2 expression\\ GR1b
+    expression was positively correlated with GR2 expression, \textit{p} < 0.05}}
+\label{subd}
+\end{center} 
+\end{figure}
+
+
 \chapter{Discussion}
 
 The finding that fish separated from their mothers spent more time in the bottom of the novel
@@ -971,8 +1028,8 @@ tank is difficult to interpret given that the time spent in the top and bottom w
 not statistically different. While the top of the tank is completely open and
 the shelter is unexposed, the bottom of the tank is both exposed to the
 uncovered side of the tank and offers camouflage amongst the gravel. Because there is a trend towards separated fry spending more time in the top
-and less time behind the shelter, as compared to unsparated fry, the increased
-time spent at the bottom of the tank can be interpretted as greater 
+and less time behind the shelter, as compared to unseparated fry, the increased
+time spent at the bottom of the tank can be interpreted as greater 
 boldness on the part of the separated fry. This is counter to the hypothesis that
 fry separated from their mothers would exhibit more anxiety-like behavior and
 thus stay hidden behind the shelter.
@@ -980,9 +1037,9 @@ thus stay hidden behind the shelter.
 There was no significant difference in aggression between groups, unlike the
 findings by Taborsky that \textit{N. pulcher} raised without adults have higher levels of
 aggression compared to those raised with adults \citep{arnold_social_2010}. It
-is possibe that the fry in the present study were too young to accurately
+is possible that the fry in the present study were too young to accurately
 measure aggression. For the most part, the focal fry had not developed
-phenotypic markings of social status. Further, the most aggressive and mature fry could not be included in
+phenotypic markings associated with social status. Further, the most aggressive and mature fry could not be included in
 the aggression analysis because it killed all of its siblings.
 
 Approximately half of the video recordings for the behavioral assays
@@ -996,23 +1053,26 @@ It is possible that while there was no correlation between average brood
 aggression and GR expression, there could have been a correlation between
 individual aggression and expression. 
 
-In the present study, not all variables that can influence GR expression were
+Although there was no difference in GR expression between conditions, there were
+correlations between GR1a expression and GR2 expression and between GR1b
+expression and GR2 expression. This implies that there are fish with distinct
+and consistent GR expression profiles. In the present study, not all variables that can influence GR expression were
 accounted for. For one, sex is known to influence the degree of HPA-axis
 regulation that occurs in response to early life stress. Female rats exhibit a
 larger change in HPA-axis function in response to early life stress compared to males. \citep{mccormick_sex-specific_1995}. Social dominance is also known to influence
 GR expression profiles in \textit{A. burtoni}, with dominant
 males having overall higher levels of GR1a and GR2 expression \citep{korzan_social_2014}. \textit{A.
-  burtoni} take on dominance and subordinance phenotypes as they mature. While
+  burtoni} take on dominance and subordinant phenotypes as they mature. While
 most of the focal fish were too young to establish distinct hierarchies, one
-brood (tank 0-0) had a male fish with prominant dominance markings and behaviors,
+brood (tank 0-0) had a male fish with prominent dominance markings and behaviors,
 suggesting that dominance could have been established in other broods by 130 days. 
 
-Given that the work of Michael Meaney primarly models maternal care and not
+Given that the work of Michael Meaney primarily models maternal care and not
 maternal separation, it may be worth altering the experimental conditions to
 better mirror the rat model. One potential measure of maternal care in
 \textit{A. burtoni} is filial cannibalism. Lab stock mothers exhibited higher
 instances of cannibalizing their young compared to wild stock mothers, likely as
-a result of artifical separation of fry and mothers within lab stock leading to
+a result of artificial separation of fry and mothers within lab stock leading to
 decreased selective pressure for kin selection \citep{renn_maternal_2009, lonstein_sensory_2002}. This measure is of course not useful
 in a study observing the phenotypes of fry; however, the distance between fry and mother after initial
 release is a measure correlated with filial cannibalism that could be used. A preliminary study by the
@@ -1022,15 +1082,15 @@ there is a notable variation within a single stock, since to use wild stock
 as the high maternal care group and lab stock as the low maternal care group
 would introduce a number of other variables associated with differences in genotype and phenotype that
 exist between the groups. This experimental paradigm would also be a natural
-occuring phenotype in contrast to the artificial induction of maternal
-separation that occured in the focal experiment. 
+occurring phenotype in contrast to the artificial induction of maternal
+separation that occurred in the focal experiment. 
 
 Another difference between the present study and Meaney's work is that the
 former examined whole brain GR expression, whereas the latter studied regional
 GR expression. Because GRs are widely expressed throughout the brain and can
 have both excitatory and inhibitory feedback roles depending on the brain
 region, it is possible that any regional changes in expression were muted by
-chnages in the opposite direction within another brain region \citep{2017Nrid,
+changes in the opposite direction within another brain region \citep{2017Nrid,
   herman_limbic_2005}. Unfortunately, the telencephalic pallium and medial
 pallium, regions expected be responsive to early life stress, of
 \textit{A. burtoni} are much smaller than the homologous structures in rats
@@ -1039,16 +1099,17 @@ there is not a clear homologue of the mammalian prefrontal cortex, a region
 known to be heavily affected by fluctuations in glucocorticoids, in teleosts
 \citep{lupien_effects_2009, yamamoto_studies_2009}. 
 
-This work can be expanded on by measuring more behaviors and physiological
-states associated with stress. To assess responsiveness towards stressors, focal
-fry could be placed in the aquarium of a large, unknown conspecific. 
-
-CRF levels can be measured as a proxy for HPA axis regulation. As mentioned
-before, fish with low stress early in life have lower CRF levels
-\citep{taborsky_stable_2012}. Corticosteroids can also bind to
-mineralocorticoid receptors. Like GRs, mineralocorticoid receptors are
-downregulated in animals exposed to early life stress \citep{gass_mice_2001}. 
-cortisol up w stress (meaney)
+Additional methods for measuring stress response regulation can be used in order
+to gain a better understanding of the ways in which maternal separation is
+affecting the HPA axis. Like GRs, mineralocorticoid receptors are
+down regulated in animals exposed to early life stress \citep{gass_mice_2001}.
+In addition to receptor expression, circulating receptor ligands could be used
+as a measure of HPA-axis activation. As mentioned
+before, fish with low stress early in life have lower CRF levels due to both
+decreased HPA axis activation and to negative feedback onto the hypothalamus via
+GR activation \citep{taborsky_stable_2012}. The extent of negative regulation
+within the HPA axis can be tested by exposing the fry to excess cortisol and
+measuring their subsequent CRF levels \citep{liu_maternal_2000}.
 
 The ability of organisms to alter their gene expression to better match their environment is a crucial adaptation.
 That being said, when organisms undergo epigenetic changes in response to an
@@ -1099,102 +1160,6 @@ mechanisms behind HPA axis reprogramming.
 % \section{Anything else?}
 % If you'd like to see examples of other things in this template, please contact CUS (email cus@reed.edu) with your suggestions. We love to see people using \LaTeX\ for their theses, and are happy to help.
 
-
-% \chapter{Mathematics and Science}	
-% \section{Math}
-% 	\TeX\ is the best way to typeset mathematics. Donald Knuth designed \TeX\ when he got frustrated at how long it was taking the typesetters to finish his book, which contained a lot of mathematics. 
-	
-% 	If you are doing a thesis that will involve lots of math, you will want to read the following section which has been commented out. If you're not going to use math, skip over this next big red section. (It's red in the .tex file but does not show up in the .pdf.)
-%	
-%% MATH and PHYSICS majors: Uncomment the following section	
-%	$$\sum_{j=1}^n (\delta\theta_j)^2 \leq {{\beta_i^2}\over{\delta_i^2 + \rho_i^2}}
-%\left[ 2\rho_i^2 + {\delta_i^2\beta_i^2\over{\delta_i^2 + \rho_i^2}} \right] \equiv \omega_i^2
-%$$
-
-%From Informational Dynamics, we have the following (Dave Braden):
-
-%After {\it n} such encounters the posterior density for $\theta$ is
-
-%$$
-%\pi(\theta|X_1< y_1,\dots,X_n<y_n) \varpropto \pi(\theta) \prod_{i=1}^n\int_{-\infty}^{y_i}
-%   \exp\left(-{(x-\theta)^2\over{2\sigma^2}}\right)\ dx
-%$$
-
-%
-
-%Another equation:
-
-%$$\det\left|\,\begin{matrix}%
-%c_0&c_1\hfill&c_2\hfill&\ldots&c_n\hfill\cr
-%c_1&c_2\hfill&c_3\hfill&\ldots&c_{n+1}\hfill\cr
-%c_2&c_3\hfill&c_4\hfill&\ldots&c_{n+2}\hfill\cr
-%\,\vdots\hfill&\,\vdots\hfill&
-%  \,\vdots\hfill&&\,\vdots\hfill\cr
-%c_n&c_{n+1}\hfill&c_{n+2}\hfill&\ldots&c_{2n}\hfill\cr
-%\end{matrix}\right|>0$$
-
-%
-%Lapidus and Pindar, Numerical Solution of Partial Differential Equations in Science and
-%Engineering.  Page 54
-
-%$$
-%\int_t\left\{\sum_{j=1}^3 T_j \left({d\phi_j\over dt}+k\phi_j\right)-kT_e\right\}w_i(t)\ dt=0,
-%   \qquad\quad i=1,2,3. 
-%$$
-
-%L\&P  Galerkin method weighting functions.  Page 55
-
-%$$
-%\sum_{j=1}^3 T_j\int_0^1\left\{{d\phi_j\over dt} + k\phi_j\right\} \phi_i\ dt 
-%   = \int_{0}^1k\,T_e\phi_idt, \qquad i=1,2,3 $$
-%   
-%Another L\&P (p145)
-
-%$$
-%\int_{-1}^1\!\int_{-1}^1\!\int_{-1}^1 f\big(\xi,\eta,\zeta\big) 
-%   = \sum_{k=1}^n\sum_{j=1}^n\sum_{i=1}^n w_i w_j w_k f\big( \xi,\eta,\zeta\big).
-%$$
-
-%Another L\&P (p126)
-
-%$$
-%\int_{A_e} (\,\cdot\,) dx dy = \int_{-1}^1\!\int_{-1}^1 (\,\cdot\,) \det[J] d\xi d\eta.
-%$$
-
-% \section{Chemistry 101: Symbols}
-% Chemical formulas will look best if they are not italicized. Get around math mode's automatic italicizing by using the argument \verb=$\mathrm{formula here}$=, with your formula inside the curly brackets.
-
-% So, $\mathrm{Fe_2^{2+}Cr_2O_4}$ is written \verb=$\mathrm{Fe_2^{2+}Cr_2O_4}$=\\
-% Exponent or Superscript: O$^{-}$\\
-% Subscript: CH$_{4}$\\
-
-% To stack numbers or letters as in $\mathrm{Fe_2^{2+}}$, the subscript is defined first, and then the superscript is defined.\\
-% Angstrom: {\AA}\\
-% Bullet: CuCl $\bullet$ 7H${_2}$O\\
-% Double Dagger: \ddag \/\\
-% Delta: $\Delta$\\
-% Reaction Arrows: $\longrightarrow$ or  $\xrightarrow{solution}$\\
-% Resonance Arrows: $\leftrightarrow$\\
-% Reversible Reaction Arrows: $\rightleftharpoons$ or $\xrightleftharpoons[ ]{solution}$ (the latter requires the chemarr package)\\
-
-
-% \subsection{Typesetting reactions}
-% You may wish to put your reaction in a figure environment, which means that LaTeX will place the reaction where it fits and you can have a figure legend if desired:
-% \begin{figure}[htbp]
-% \begin{center}
-% $\mathrm{C_6H_{12}O_6  + 6O_2} \longrightarrow \mathrm{6CO_2 + 6H_2O}$
-% \caption{Combustion of glucose}
-% \label{combustion of glucose}
-% \end{center}
-% \end{figure}
-
-% \subsection{Other examples of reactions}
-% $\mathrm{NH_4Cl_{(s)}} \rightleftharpoons \mathrm{NH_{3(g)}+HCl_{(g)}}$\\
-% $\mathrm{MeCH_2Br + Mg} \xrightarrow[below]{above} \mathrm{MeCH_2\bullet Mg \bullet Br}$
-
-% \section{Physics}
-
-% Many of the symbols you will need can be found on the math page (\url{http://web.reed.edu/cis/help/latex/math.html}) and the Comprehensive \LaTeX\ Symbol Guide (enclosed in this template download).  You may wish to create custom commands for commonly used symbols, phrases or equations, as described in Chapter \ref{commands}.
 
 % \section{Biology}
 % You will probably find the resources at \url{http://www.lecb.ncifcrf.gov/~toms/latex.html} helpful, particularly the links to bsts for various journals. You may also be interested in TeXShade for nucleotide typesetting (\url{http://homepages.uni-tuebingen.de/beitz/txe.html}).  Be sure to read the proceeding chapter on graphics and tables, and remember that the thesis template has versions of Ecology and Science bsts which support webpage citation formats. 
