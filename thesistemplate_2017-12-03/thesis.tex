@@ -37,6 +37,7 @@
 %###############################
 \usepackage{epigraph}
 \usepackage{mathdesign}
+\usepackage{textcomp}
 \usepackage[hang, flushmargin]{footmisc}
 %###############################
 
@@ -622,7 +623,7 @@ Non-territorial males are subordinate and resemble females, with camouflage colo
 The difference in dominance is also correlated with a difference in stress and
 hormonal regulation \citep{renn_fish_2008}. Dominant males have increased testosterone and gonad
 size, while subordinate males have increased levels of
-cortisol and experience faster growth. Males are
+cortisol and experience faster growth \citep{francis_social_1993, renn_fish_2008}. Males are
 able two switch between these phenotypes throughout their lives in response to
 changes in their social interactions.
 
@@ -846,9 +847,10 @@ and quickly decapitated. The brains were then extracted and placed into 1 mL of
 RNALater and
 stored at 4 $^\circ$C until needed for RNA isolation. RNA from each individual's
 whole brains was extracted
-using a Maxwell 16 LEV simplyRNA Tissue kit (AS1270). RNA quality and concentration were confirmed using gel
+using a Maxwell 16 LEV simplyRNA Tissue kit (Promega AS1270). RNA quality and concentration were confirmed using gel
 electrophoresis and nanodrop. For each sample, ~100 ng of isolated RNA was
-reverse transcribed into cDNA with an Invitrogen Reverse Transcription kit (18080093).
+reverse transcribed into cDNA with an Invitrogen Reverse Transcription kit
+(Thermo Fisher 18080093).
 
 \begin{figure}[htbp] 
 \begin{centering} 
@@ -864,14 +866,23 @@ the same direction.}}
 \end{figure}
 
 Previously validated primers for GR1a, GR1b, and GR2 were used for qPCR \citep{solomon-lane_early-life_2018}. The
-housekeeping gene rpl32, which is a ribosomal protein coding gene, was used as a
+reference gene rpl32, which is a ribosomal protein coding gene, was used as a
 reference for GR expression. Each reaction contained cDNA (1 $\mu$L), 2x Immuno Mix (10 $\mu$L),
 forward and reverse primers (1 $\mu$L of 100 nM each), 50x SYBR Green (0.5
 $\mu$L), and nuclease-free water (6.5 $\mu$L). The program used for the qPCR
-reaction involved a hot start (95$^\circ$C, 5:00 min), 40 cycles that each
+reaction included a hot start (95$^\circ$C, 5:00 min), 40 cycles that each
 ended with a fluorescent plate read (94$^\circ$C, 0:45 min; 60.9$^\circ$C, 1:00
 min; 72$^\circ$C, 0:30 min), 72$^\circ$C for 2:00 min, and a melt curve analysis from 65$^\circ$C to
-95$^\circ$C that measured fluorescence at 0.5$^\circ$C intervals every five seconds.
+95$^\circ$C that measured fluorescence at 0.5$^\circ$C intervals every five
+seconds. qPCR was run using a BioRad CFX Connect Real-Time PCR Detection System
+and the data were analyzed with
+
+The starting quantity (SQ) for each sample was calculated by adjusting the cycle
+quantification (C$_{q}$)
+value by the efficiency of the primer in order to
+correct for starting concentration of cDNA. The 
+mean SQ for each sample (samples were run in duplicate) was then divided by the mean SQ
+of rpl32.
 
 \begin{figure}[htbp] 
 \begin{center} 
@@ -890,25 +901,25 @@ min; 72$^\circ$C, 0:30 min), 72$^\circ$C for 2:00 min, and a melt curve analysis
 \end{figure}
 
 \begin{table}[htbp]
-\caption[Genes and corresponding primer sequences used for qPCR]{Genes and corresponding
-  primer sequences used for qPCR}
+\caption[Genes and corresponding qPCR primer information]{Genes and corresponding
+ qPCR primer information}
 \begin{center}
 \footnotesize
-\begin{tabular}{ | l | l | l |}
+\begin{tabular}{ | c | l | l | c | c |}
 \hline
-Target & Forward Primer (5' to 3')& Reverse Primer (5' to 3')\\
+Target & Forward Primer (5' to 3')& Reverse Primer (5' to 3') & Melting Temperature & Efficiency\\
 \hline
-gr2 & TGC CTC TGT CAC & AGT CGT CTG CGT\\
-  &  TGC CAC CGT AG & CTG AAG TAA CTG\\
+gr2 & TGC CTC TGT CAC & AGT CGT CTG CGT & 60.9 \textdegree{}C& 100.7\%\\
+  &  TGC CAC CGT AG & CTG AAG TAA CTG & & \\
 \hline
-  gr1a & TCA TAA GAT CTG& GTA GTT GTG CTG\\
-  &  TTT GGT GTG CTC &  GCC TTC AAC\\
+  gr1a & TCA TAA GAT CTG& GTA GTT GTG CTG & 60.9 \textdegree{}C& 106.9\% \\
+  &  TTT GGT GTG CTC &  GCC TTC AAC & & \\
 \hline
-    gr1b & TGT TGG CTT CTC  & GTT GTG CTG GCC \\
-  & CGG TTC ATC AC & ATC TGT GTT T \\
+    gr1b & TGT TGG CTT CTC  & GTT GTG CTG GCC & 60.9 \textdegree{}C& 94.4\%\\
+  & CGG TTC ATC AC & ATC TGT GTT T & & \\
 \hline
-    rfl32 & TGC TGA TGC CCA & TCT TGG AGG AGA \\
-  & ACA TCG GTT & CAT TGT GGG \\
+    rfl32 & TGC TGA TGC CCA & TCT TGG AGG AGA & 60.9 \textdegree{}C& 99.2 \%\\
+  & ACA TCG GTT & CAT TGT GGG & & \\
 \hline
 \end{tabular}
 \end{center}
@@ -922,7 +933,8 @@ gene expression troubleshooting. RNA was extracted from the brains and reverse
 transcribed into cDNA. All of the primer sets were tested using PCR on a gradient of
 melting temperature using this cDNA. The most effective melting temperature was
 then selected for qPCR. The efficiency of individual primers at the selected
-melting temperature was calculated with qPCR using a dilution series of the cDNA.
+melting temperature was calculated with qPCR using a two-fold dilution series
+ranging from $2^0$ - $2^{-5}$ of the cDNA.
 
 \chapter{Results}
 \section{Size}
@@ -942,9 +954,9 @@ melting temperature was calculated with qPCR using a dilution series of the cDNA
 \end{center} 
 \end{figure}
 
-Because of the ability of glucocorticoids to alter development, each
-experimental groups' body
-compositions were assessed. Prior to euthanasia each fry's weight and length, from the nose to the beginning of
+Because glucocorticoids alter development, each
+fry's body
+composition was assessed. Prior to euthanasia each fry's weight and length, from the nose to the beginning of
 the caudal fin, were measured. 
 Body ratio was calculated to be the weight divided by body length. The conditions were
 compared using a student's t-test for independent means. There was no
@@ -1026,12 +1038,7 @@ conditions]{\footnotesize{GR expression profile for experimental
 \end{center} 
 \end{figure}
 
-The starting quantity (SQ) for each sample was calculated by adjusting the cycle
-quantification (C$_{q}$)
-value by the efficiency of the primer in order to
-correct for starting concentration of cDNA. The 
-mean SQ for each sample (samples were run in duplicate) was then divided by the mean SQ
-of rpl32. GR1a, GR1b, and GR2 expression between conditions were analyzed individually using an independent means
+ GR1a, GR1b, and GR2 expression between conditions were analyzed individually using an independent means
 t-test. One fry (brood Z-2-9) was excluded from expression analysis due to an
 absense of rpl32 expression data and outlying data points for the focal genes.\\
 There was no statistically significant gene expression between treatment groups
@@ -1110,7 +1117,7 @@ regulation that occurs in response to early life stress. Female rats exhibit a
 larger change in HPA-axis function in response to early life stress compared to males \citep{mccormick_sex-specific_1995}. Social dominance is also known to influence
 GR expression profiles in \textit{A. burtoni}, with dominant
 males having overall higher levels of GR1a and GR2 expression \citep{korzan_social_2014}. \textit{A.
-  burtoni} take on dominant and subordinant phenotypes as they mature. While
+  burtoni} take on dominant and subordinant phenotypes as they mature \citep{fernald_quantitative_1977}. While
 most of the focal fish were too young to establish distinct hierarchies, one
 brood (0-0) had a male fish with prominent dominance markings and behaviors,
 suggesting that dominance could have been established in other broods by 130 days. 
