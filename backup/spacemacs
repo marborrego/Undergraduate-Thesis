@@ -44,16 +44,17 @@ values."
      emacs-lisp
      git
      latex
-     ;; markdown
+     markdown
+     bibtex
      ;; org
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
-     ;; spell-checking
+     spell-checking
      syntax-checking
      ; c-c++
      ;; version-control
-     nix
+     nixos
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -315,15 +316,15 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
 
-  ;; Set escape keybinding to "jk"
+  Set escape keybinding to "jk"
   (setq-default evil-escape-key-sequence "jk")
 
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Spell checking
 
-  ;; nix-env -iA nixpkgs.aspellDicts.en
-  ;; nix-env -iA nixpkgs.aspellDicts.en-science
-  ;; echo "data-dir /Users/marborrego/.nix-profile/lib/aspell" >> ~/.aspell-conf
-  (setq ispell-program-name "/Users/marborrego/.nix-profile/bin/aspell")
+  nix-env -iA nixpkgs.aspellDicts.en
+  nix-env -iA nixpkgs.aspellDicts.en-science
+  echo "data-dir /Users/mar/.nix-profile/lib/aspell" >> ~/.aspell-conf
+  (setq ispell-program-name "/Users/mar/.nix-profile/bin/aspell")
 
   (spacemacs/set-leader-keys
     "Sc" 'flyspell-correct-at-point
